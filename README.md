@@ -1,1 +1,35 @@
 # balances-multicall
+
+Simple contract to get token balances in one single call. The contract is created using CREATE2 in order to have the same address on all chains.
+
+&nbsp;
+
+***
+
+&nbsp;
+
+## :white_check_mark: Publish & Verify
+
+Create an __.env__ file with the following fields:
+
+```
+MAINNET_PRIVATE_KEY=
+ROPSTEN_PRIVATE_KEY=
+ROSPTENT_NODE=
+ETH_MAINNET_NODE=
+ETHERSCAN_API_KEY=
+```
+
+
+### publish
+
+
+```
+❍ npx hardhat run --network mainnet scripts/deploy-script.js
+```
+
+### verify
+
+```
+❍ npx hardhat verify --network mainnet DEPLOYED_CONTRACT_ADDRESS "Constructor argument 1"
+```
