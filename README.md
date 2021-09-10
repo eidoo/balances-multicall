@@ -27,6 +27,48 @@ BalanceChecker: 0x07c7BBC98a251C85f1dD7958BA4786dc5eacF24d
 
 &nbsp;
 
+## :rocket: How to use it
+
+```js
+const web3 = new Web3(provider)
+const contract = new web3.eth.Contract(
+[
+    {
+    inputs: [
+        {
+        internalType: 'address[]',
+        name: '_users',
+        type: 'address[]'
+        },
+        {
+        internalType: 'address[]',
+        name: '_tokens',
+        type: 'address[]'
+        }
+    ],
+    name: 'balances',
+    outputs: [
+        {
+        internalType: 'uint256[]',
+        name: '',
+        type: 'uint256[]'
+        }
+    ],
+    stateMutability: 'view',
+    type: 'function'
+    }
+],
+'0x07c7BBC98a251C85f1dD7958BA4786dc5eacF24d'
+)
+const balances = await contract.methods.balances(_addresses, _tokens).call()
+```
+
+&nbsp;
+
+***
+
+&nbsp;
+
 ## :white_check_mark: Publish & Verify
 
 Create an __.env__ file with the following fields:
