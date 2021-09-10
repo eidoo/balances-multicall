@@ -1,4 +1,4 @@
-pragma solidity ^0.4.21;
+pragma solidity ^0.7.3;
 
 contract Factory {
     event Deployed(address addr, uint256 salt);

@@ -4,6 +4,25 @@ Simple contract to get token balances in one single call. The contract is create
 
 &nbsp;
 
+### Addresses
+
+```js
+Factory: 0xB10CeCcBe00572deE94cF0514581d3695A8Cd596
+BalanceChecker: 0x07c7BBC98a251C85f1dD7958BA4786dc5eacF24d
+```
+
+&nbsp;
+
+### Available Chains
+
+* Ethereum
+* Binance Smart Chain
+* Polygon (coming soon)
+* Fantom (coming soon)
+* xDai (coming soon)
+
+&nbsp;
+
 ***
 
 &nbsp;
@@ -18,6 +37,8 @@ ROPSTEN_PRIVATE_KEY=
 ROSPTENT_NODE=
 ETH_MAINNET_NODE=
 ETHERSCAN_API_KEY=
+BSC_MAINNET_NODE=
+BSC_MAINNET_PRIVATE_KEY=
 ```
 
 
