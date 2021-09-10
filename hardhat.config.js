@@ -44,6 +44,12 @@ module.exports = {
       gasPrice: 7e9,
       gas: 200e9,
     },
+    polygon: {
+      url: getEnvironmentVariable('POLYGON_MAINNET_NODE'),
+      accounts: [getEnvironmentVariable('POLYGON_MAINNET_PRIVATE_KEY')],
+      gasPrice: 7e9,
+      gas: 200e9,
+    },
   },
   etherscan: {
     apiKey: getEnvironmentVariable('ETHERSCAN_API_KEY'),

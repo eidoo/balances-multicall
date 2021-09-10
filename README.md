@@ -17,7 +17,7 @@ BalanceChecker: 0x07c7BBC98a251C85f1dD7958BA4786dc5eacF24d
 
 * Ethereum
 * Binance Smart Chain
-* Polygon (coming soon)
+* Polygon
 * Fantom (coming soon)
 * xDai (coming soon)
 
@@ -39,6 +39,8 @@ ETH_MAINNET_NODE=
 ETHERSCAN_API_KEY=
 BSC_MAINNET_NODE=
 BSC_MAINNET_PRIVATE_KEY=
+POLYGON_MAINNET_NODE=
+POLYGON_MAINNET_PRIVATE_KEY=
 ```
 
 
