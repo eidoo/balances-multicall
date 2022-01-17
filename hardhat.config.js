@@ -50,6 +50,18 @@ module.exports = {
       gasPrice: 7e9,
       gas: 200e9,
     },
+    fantom: {
+      url: getEnvironmentVariable('FANTOM_MAINNET_NODE'),
+      accounts: [getEnvironmentVariable('FANTOM_MAINNET_PRIVATE_KEY')],
+      gasPrice: 280e9,
+      gas: 200e9,
+    },
+    avalanchec: {
+      url: getEnvironmentVariable('AVALANCHEC_MAINNET_NODE'),
+      accounts: [getEnvironmentVariable('AVALANCHEC_MAINNET_PRIVATE_KEY')],
+      gasPrice: 25e9,
+      gas: 200e9,
+    },
   },
   etherscan: {
     apiKey: getEnvironmentVariable('ETHERSCAN_API_KEY'),
